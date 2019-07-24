@@ -1,0 +1,36 @@
+int DIR1 = 0;
+int PWM1 = 2;
+
+
+void setup() {
+  //Serial.begin(9600);
+  // put your setup code here, to run once:
+  pinMode(DIR1,OUTPUT);
+  pinMode(PWM1,OUTPUT);
+
+}
+
+void loop() {
+  
+  digitalWrite(DIR1,0);
+  analogWrite(PWM1,100);
+
+
+  
+  //Serial.print("100");
+  delay(10000);
+  analogWrite(PWM1,0);
+  delay(10000);
+
+  
+  
+  digitalWrite(DIR1,1);
+  analogWrite(PWM1,100);
+  delay(10000);
+  analogWrite(PWM1,0);
+  delay(10000);
+
+  
+  // put your main code here, to run repeatedly:
+
+}
